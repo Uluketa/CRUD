@@ -84,3 +84,13 @@ TB_ITENSVENDAS_SUBTOTAL decimal(10,2),
 FOREIGN KEY (TB_VENDAS_ID) REFERENCES TB_VENDAS(TB_VENDAS_ID),
 FOREIGN KEY (TB_PRODUTOS_ID) REFERENCES TB_PRODUTOS(TB_PRODUTOS_ID)
 );
+
+insert into tb_funcionarios 
+(tb_funcionarios_nome, tb_funcionarios_email, tb_funcionarios_senha, 
+TB_FUNCIONARIOS_NIVEL_ACESSO, TB_FUNCIONARIOS_NUMERO) 
+values 
+('AdmB', 'adm@admB', 'admB', 'AdministradorB', 9),
+('AdmA','adm@admA', 'admA', 'AdministradorA', 19),
+('AdmC','adm@admC', 'admC', 'AdministradorC', 29),
+('AdmD','adm@admD', 'admD', 'AdministradorD', 39),
+('User','user@user', 'user', 'Usuário', 49);
